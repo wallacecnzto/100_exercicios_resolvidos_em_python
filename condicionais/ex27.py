@@ -3,9 +3,11 @@
 (a soma de dois lados deve ser sempre maior que o terceiro lado).
 """
 
-n1 = int(input("Digite o primeiro número: "))
-n2 = int(input("Digite o segundo número: "))
-n3 = int(input("Digite o terceiro número: "))
+lado1 = int(input("Digite o primeiro número: "))
+lado2 = int(input("Digite o segundo número: "))
+lado3 = int(input("Digite o terceiro número: "))
 
-if n1 + n2 > n3:
-    pass
+if lado1 + lado2 > lado3 and lado1 + lado3 > lado2 and lado2 + lado3 > lado1:
+    print("Os lados podem formar um triângulo!")
+else:
+    print("Os lados não podem formar um triângulo!")
