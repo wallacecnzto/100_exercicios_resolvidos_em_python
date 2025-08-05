@@ -9,4 +9,4 @@ idade_para_votar = 16
 #     print("Você não pode votar!")
 # else:
 #     print("Você pode votar!")
-print("Você pode voltar!") if ano_de_nascimento >= idade_para_votar else print("Vocẽ não pode votar!")
+print("Você pode votar!") if ano_de_nascimento >= idade_para_votar else print("Vocẽ não pode votar!")
