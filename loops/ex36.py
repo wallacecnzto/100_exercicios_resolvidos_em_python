@@ -7,5 +7,5 @@ number = 1
 #     print(number)
 #     number += 1
 
-for num in range(1,11):
+for num in range(1, 11):
     print(num)
