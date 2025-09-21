@@ -4,6 +4,10 @@
 
 for i in range(1, 51):
     if i % 2 == 0:
-        print(f"Pares: {i}")
-    else:
-        print(f"Impares: {i}")
+        print(f"Par: {i}")
+
+print("=" * 10)
+
+for i in range(51, 101):
+    if i % 2 == 1:
+        print(f"Impar: {i}")
