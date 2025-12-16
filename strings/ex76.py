@@ -2,13 +2,26 @@
 
 primeira_palavra = input("Digite a primeira palavra: ").lower()
 segunda_palavra = input("Digite a segunda palavra: ").lower()
-eh_anagrama = False
 
-if len(segunda_palavra) == len(primeira_palavra):
-    eh_anagrama = True
+# Substitiu o espaço em branco da palavra por nada.
+primeira_palavra.replace(" ", "")
+segunda_palavra.replace(" ", "")
 
-for letra in segunda_palavra:
-    if letra in primeira_palavra:
-        eh_anagrama = True
-        
-if 
+# Verifica se elas têm o mesmo tamanho.
+if len(segunda_palavra) != len(primeira_palavra):
+    print("As palavras não são anagramas.")
+    
+# Converte elas em listas.
+lista_da_primeira_palavra = list(primeira_palavra)
+lista_da_segunda_palavra = list(segunda_palavra)
+
+# Ordena as listas (importante!)
+lista_da_primeira_palavra.sort()
+lista_da_segunda_palavra.sort()
+
+# E compara se elas são iguais.
+if lista_da_segunda_palavra == lista_da_primeira_palavra:
+    print("A segunda palavra é anagrama da primeira palavra.")
+else:
+    print("A segunda palavra náo é anagrama da primeira palavra.")
+    
